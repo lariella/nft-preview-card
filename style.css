@@ -1,0 +1,127 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.nft-card {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 310px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 30px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    border-radius: 15px;
+}
+
+
+.nft-img {
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: contain;
+    width: 310px;
+    height: 310px;
+    border-radius: 10px;
+}
+
+.nft-img-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+}
+
+.nft-img-overlay > svg {
+    display: none;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.purchase-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    margin-top: 15px;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color:hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.days-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nft-author {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nft-author > img {
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#name-highlight {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.566);
+}
+
+/* Active States: */
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: 250ms;
+}
+
+#name-highlight:hover {
+    color: rgb(0, 255, 247);
+    transition: 250ms;
+}
+
+.nft-img:hover {
+    cursor: pointer;
+}
+
+.nft-img-overlay:hover {
+    background-color: rgba(0, 255, 247, 0.5);
+    transition: 250ms;
+}
+
+
+.nft-img-overlay:hover > svg {
+    display: block;
+}
+
